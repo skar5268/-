@@ -1,0 +1,11 @@
+.loginBtn{
+    
+    a:hover{
+        color: $secondary !important;
+    }
+    .btn:nth-child(1):hover{
+        border-color: $secondary;background-color: $secondary;
+        color: $secondary !important;
+    }
+
+}

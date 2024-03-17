@@ -1,0 +1,376 @@
+@import "mixin";
+
+.main-container-receipt{
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    align-items: flex-start;
+    font-family: PingFang TC;
+
+    @include pad{
+        padding: 0;
+        margin-bottom: 0;
+    }
+}
+
+.receipt{
+    width: 60%;
+    background-color: $primary;
+    padding-top: 30px;
+    margin-right: 20px;
+
+    @include pad{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .title{
+        max-width: 380px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    
+        @include pad{
+            width: 80%;
+        }
+    
+        h2{
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: bold;
+            color: $primary-light;
+        }
+    }
+
+    .kind{
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        max-width: 380px; 
+        
+        @include pad{
+            width: 80%;
+        }
+
+
+        &-e, &-p{
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            border: solid 1px $primary-light;
+            color: $primary-light;
+            font-size: 20px;
+            line-height: 28px;
+            padding: 14px;
+            font-weight: bold;
+        }
+            
+        &-e, &-p:hover{
+            background-color: $primary-light;
+            color: $primary;
+        }
+
+        
+        &-e{
+            background-color: $primary-light;
+            color: $primary;
+        }
+    }
+}
+
+
+
+.step{
+    display: flex;
+    align-items: center;
+
+    .line{
+        width: 60px;
+        height: 1px;
+        border-top: solid $primary-light 1px;
+    }
+
+    span{
+        color: $primary-light;
+        font-size: 20px;
+        margin: -2px;
+    }
+
+    span:nth-child(5){
+        margin: 0;
+    }
+
+
+    @include pad{
+        span{
+            font-size: 16px;
+        }
+
+        .line{
+            width: 54px;
+        }
+    }
+
+}
+
+
+.user-input-email{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 380px;
+    @include pad{
+        width: 80%;
+    }
+    li{
+        margin-bottom: 16px;
+        width: 100%;
+    }
+    
+    h2{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color: $primary-light;
+        margin-bottom: 8px;
+    }
+}
+
+#receipt-mail{
+    background-color: $primary-light;
+    height: 56px;
+    font-size: 16px;
+    line-height: 22px;
+    width: 99%;
+    border: none;
+    outline: none; 
+}
+
+
+.user-input-address{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 380px;
+    color: $primary-dark;
+    display: none;
+    @include pad{
+        width: 80%;
+    }
+
+    li{
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+
+    span{
+        display: block;
+        cursor: pointer;
+        color: $primary-light;
+        background-color: $primary-light;
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    /*勾選同運送地址*/
+    .checkbox-active{
+        background-color: $primary;
+    }
+
+    .title{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 100%;
+        color: $primary-light;
+        line-height: 28px;
+        margin-bottom: 8px;
+        
+        h2{
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        h3{
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    li:nth-child(2){
+        h2{
+            font-size: 20px;
+            line-height: 28px;
+            color: $primary-light;
+            margin-bottom: 8px;
+        }
+    }
+
+
+    .address-option{
+        display: flex;
+        justify-content: space-between;
+        max-width: 380px;
+        margin-bottom: 8px;
+        font-family: PingFang TC;
+    }
+
+    select{
+        background-color: $primary-light;
+        height: 56px;
+        font-size: 16px;
+        line-height: 20px;    
+        width: 48%;
+        border: none;
+        outline: none;
+        color: $primary-dark;
+        font-family: PingFang TC;
+        padding: 10px;
+    }
+}
+
+#receipt-address{
+    background-color: $primary-light;
+    height: 56px;
+    font-size: 16px;
+    line-height: 20px;    
+    width: 99%;
+    border: none;
+    outline: none;
+    font-family: PingFang TC;
+}
+
+/*不同發票種類的選項*/
+.receipt .kind .receipt-active{
+    background-color: $primary-light;
+    color: $primary;
+}
+
+.receipt .kind .receipt-none{
+    background-color: $primary;
+    color: $primary-light;
+}
+
+/*不同發票種類的內容*/
+.receipt-userinput-active{
+    display: block;
+}
+
+.receipt-userinput-none{
+    display: none;
+}
+
+
+.ok-button{
+    a{
+        width: 100%;
+        background-color: $accent;
+        color: $primary;
+        text-align: center;
+        font-size: 24px;
+        line-height: 33px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        font-weight: bold;
+    }
+    a:hover{
+        background-color: $primary-light;
+        color: $primary;      
+    }
+
+}
+
+
+
+.shop-detail{
+    width: 40%;
+
+    @include pad{
+        display: none;
+    }
+
+    h2{
+        background-color: $primary-light;
+        color: $primary-dark;
+        font-size: 24px;
+        line-height: 33px;
+        padding: 16px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.summary{
+    margin-bottom: 20px;
+
+    ul{
+        border: solid 1px $primary-light;
+        padding: 16px 20px;
+
+        li{
+            display: flex;
+            justify-content: space-between;
+            h4{
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: lighter;
+                color: $primary-dark;
+                margin-bottom: 8px;
+            }
+            h3{
+                padding-top: 8px;
+                font-size: 20px;
+                line-height: 28px;
+                color: $primary-dark;
+                font-weight: bold;
+            }
+        }
+    }
+
+}
+
+.shop-list{
+    ul{
+        border: solid 1px $primary-light;
+        padding: 16px 20px 0 20px;
+
+    }
+    li{
+         display: flex;
+         height: 80px;
+         margin-bottom: 16px;
+         align-items: center;
+         justify-content: center;
+
+    }
+    img{
+        width: 120px;
+        height: 80px;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+}
+
+.money{
+    h4{
+        color: $primary-dark;
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 2px;
+        font-weight: lighter;
+    }
+    h3{
+        color: $primary-dark;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: bold;
+    }
+}

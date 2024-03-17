@@ -1,0 +1,377 @@
+@charset "UTF-8";
+body {
+  font-family: PingFang TC;
+}
+
+.wrap {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+h1 a {
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg);
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-size: cover;
+  width: 220px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  h1 a {
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/logotype-lg-dark.svg);
+    width: 130px;
+    height: 20px;
+  }
+}
+
+h1 a:hover {
+  opacity: 0.7;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+  .menu img {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .menu img:hover {
+    background-color: #EAF0ED;
+  }
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-list-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 240px;
+  margin-right: 79px;
+}
+
+@media (max-width: 768px) {
+  .menu-list-inner {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    top: -100px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    line-height: 50px;
+    z-index: -10;
+  }
+}
+
+.menu-list-inner li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3F5D45;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-list-inner li a {
+    color: #fff;
+  }
+}
+
+.menu-list-inner li a:hover {
+  background-color: #EAF0ED;
+}
+
+.menu-active {
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .menu-active {
+    visibility: visible;
+    top: 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .menu-active li a {
+    color: #3F5D45;
+    -webkit-transition: all 1.7s;
+    transition: all 1.7s;
+  }
+  .menu-active :hover {
+    background: #EAF0ED;
+  }
+}
+
+.menu-cart {
+  margin-left: -20px;
+}
+
+.menu-cart a {
+  width: 24px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu-cart a:hover {
+  background-color: #EAF0ED;
+}
+
+.banner img {
+  margin-bottom: 60px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .banner img {
+    margin-bottom: 0;
+  }
+}
+
+/*下方區塊*/
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 75%;
+  }
+}
+
+.subscribe {
+  background-color: #3F5D45;
+}
+
+.subscribe-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 33px;
+  color: #EAF0ED;
+}
+
+@media (max-width: 768px) {
+  .subscribe-inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.subscribe-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .subscribe-title {
+    margin-bottom: 30px;
+  }
+}
+
+.subscribe-title img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.form-mail {
+  background-color: #EAF0ED;
+  width: 380px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-mail label {
+  padding: 16px 0px 16px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-mail label img {
+  padding-right: 20px;
+}
+
+.form-mail input[type="submit"] {
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/arrow_forward-24px.png);
+  width: 64px;
+  background-color: #FFE180;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+#mail {
+  background-color: #EAF0ED;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.footer {
+  background-color: #EAF0ED;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-inner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer-inner p {
+  font-size: 16px;
+  line-height: 16px;
+  color: #3F5D45;
+  padding-top: 16px;
+  font-family: Times;
+}
+
+.information {
+  width: 50%;
+  padding-top: 8.9pt;
+}
+
+.logo {
+  width: 171px;
+  margin-bottom: 115.5px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-bottom: 39.5px;
+  }
+}
+
+.contact {
+  font-size: 16px;
+  line-height: 24px;
+  color: #3F5D45;
+  font-weight: regular;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin-bottom: 37px;
+  }
+}
+
+.slogan {
+  width: 50%;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 23px;
+  line-height: 29pt;
+  color: #3F5D45;
+  font-family: Noto Serif TC Black;
+  letter-spacing: 6px;
+}
+
+@media (max-width: 768px) {
+  .slogan {
+    display: none;
+  }
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .link {
+    margin-bottom: 23px;
+  }
+}
+
+.link li a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+/*# sourceMappingURL=layout.css.map */

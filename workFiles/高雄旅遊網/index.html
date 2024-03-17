@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高雄旅遊網</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+
+<body>
+    <header class="banner">
+        <h1>高雄旅遊資訊</h1>
+        <select name="行政區選擇" id="selectAreaId">
+            <option value="">- - 請選擇行政區 - -</option>
+            <option value="802">苓雅區</option>
+            <option value="807">三民區</option>
+            <option value="800">新興區</option>
+            <option value="803">鹽埕區</option>
+        </select>
+        <div class="selectBox">
+            <h3>熱門行政區</h3>
+            <ul class='d-flex'>
+                <li class="firstArea"><a href="#contentId">苓雅區</a></li>
+                <li class="secArea"><a href="#contentId">三民區</a></li>
+                <li class="thirdArea"><a href="#contentId">新興區</a></li>
+                <li class="forthArea"><a href="#contentId">鹽埕區</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--
+    <div class="divider">
+        <a href="#contentId"><img src="img/icons_down.png" alt=""></a>
+    </div>-->
+
+    <section>
+        <div class="content" id="contentId">
+            <a href="#listId" class="w-100 position-absolute d-flex justify-content-center">
+                <span class="material-icons downIcon">
+                    arrow_drop_down_circle
+                </span>
+            </a>
+
+            <h2 class="title" id="titleId"></h2>
+
+            <ul class="list" id='listId'>
+
+            </ul>
+        </div>
+
+        <ul class="pagenation">
+            <li><a href="#">
+                    < prev</a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">next ></a></li>
+        </ul>
+    </section>
+
+
+    <footer><a href="#contentId" class="backTopBtn"><img src="img/btn_goTop.png" alt=""></a>
+        <a href="index.html">高雄旅遊網</a>
+        <p>資料來源：高雄市政府 </p>
+    </footer>
+
+
+
+    <script src="js/all.js"></script>
+</body>
+
+</html>

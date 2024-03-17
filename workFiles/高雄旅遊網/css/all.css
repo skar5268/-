@@ -1,0 +1,342 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+body {
+  font-weight: bold;
+}
+
+.banner {
+  background-image: url(../img/Hero.png);
+  background-size: cover;
+  background-position: center;
+  max-width: 1920px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #ffffff;
+  padding-top: 100px;
+  margin-bottom: 80px;
+  letter-spacing: 3px;
+}
+
+#selectAreaId {
+  width: 452px;
+  padding: 10px 20px;
+  margin-bottom: 150px;
+  border: 3px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+#selectAreaId option {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.selectBox {
+  position: absolute;
+  bottom: -60px;
+  width: 800px;
+  padding: 20px 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.selectBox h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.selectBox ul {
+  display: flex;
+  margin-left: 50px;
+}
+.selectBox li {
+  color: #ffffff;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+.selectBox li a {
+  padding: 10px 30px;
+  color: #ffffff;
+}
+.selectBox li a:hover {
+  opacity: 0.5;
+}
+.selectBox .firstArea {
+  background-color: #8A82CC;
+}
+.selectBox .secArea {
+  background-color: #FFA782;
+}
+.selectBox .thirdArea {
+  background-color: #F5D005;
+}
+.selectBox .forthArea {
+  background-color: #559AC8;
+}
+
+.divider {
+  width: 900px;
+  margin: 0 auto;
+  /*   border-bottom: 3px dashed #559AC8;*/
+  position: relative;
+  margin-bottom: 80px;
+}
+.divider img {
+  border: 3px solid #559AC8;
+  border-radius: 100px;
+  padding: 10px 8px;
+  position: absolute;
+  left: 450px;
+  bottom: -25px;
+  background-color: #fff;
+}
+
+section {
+  background-color: #fefefe;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-top: 3px dashed #559AC8;
+  padding-top: 50px;
+  position: relative;
+}
+
+.downIcon {
+  position: absolute;
+  top: -14px;
+  z-index: 1;
+  background-color: #ffffff;
+  font-size: 32px;
+  color: #559AC8;
+  border: 1px solid #fff;
+  border-radius: 100px;
+}
+
+.list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.list .listItem {
+  width: 48%;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+.list .listItem a:hover {
+  transition: 0.3s;
+}
+.list .listItem a:hover h3 {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.list .listItem h3 {
+  transition: 0.5s;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px 25px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.list .listItem h3 span {
+  font-size: 16px;
+  line-height: 18px;
+}
+.list .listItem li {
+  margin-left: 25px;
+  margin-bottom: 15px;
+  color: #4A4A4A;
+}
+.list .listItem li img {
+  margin-right: 10px;
+}
+.list .listItem li a {
+  color: #4A4A4A;
+  transition: 0.3s;
+}
+.list .listItem li .phoneClass:hover {
+  color: #559AC8;
+}
+.list .listItem li:nth-last-child(1) img {
+  padding-left: 2.1px;
+  margin-right: 15px;
+}
+.list .tag {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+.list .tag img {
+  margin-right: 10px;
+}
+.list .tagInfo {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100px;
+  height: 16px;
+}
+
+.pagenation {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.pagenation a {
+  color: #4A4A4A;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.pagenation li:nth-child(1) {
+  opacity: 0.5;
+}
+.pagenation li:nth-child(2) a {
+  color: #559AC8;
+}
+.pagenation li a:hover {
+  background-color: #559AC8;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #559AC8;
+  padding: 50px 0;
+  text-align: center;
+}
+footer a {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+footer p {
+  color: #FFD366;
+}
+
+.backTopBtn {
+  position: fixed;
+  z-index: 90;
+  right: 100px;
+  bottom: 31px;
+  transition: all 0.5s;
+}

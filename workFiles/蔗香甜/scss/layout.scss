@@ -1,0 +1,324 @@
+@import "mixin";
+@import "variable";
+
+body{
+    font-family: PingFang TC;
+}
+
+.wrap{
+    max-width: 940px;
+    margin: 0 auto;
+};
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+
+    @include pad(){
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+};
+
+h1{
+    a{
+        background-image: url(../img/Logo02.svg);
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 220px;
+        height: 40px;
+
+        @include pad(){
+            background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/logotype-lg-dark.svg);
+            width: 130px;
+            height: 20px;
+        }
+    }
+
+    a:hover{
+        opacity: 0.7;
+    }
+};
+
+.menu{
+    display: none;
+
+    @include pad(){
+        display: block;
+        cursor: pointer;
+        
+        img{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        img:hover{
+            background-color: $primary-light;
+        }
+    }
+
+    &-list{
+        display: flex;
+    }
+
+    &-list-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 240px;
+        margin-right: 79px;
+
+        @include pad(){
+            display: block;
+            visibility: hidden;
+            position: absolute;
+            background-color: #fff;
+            top: -100px;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            line-height: 50px;
+            z-index: -10;
+        }
+        
+        li {
+            a{
+                font-size: 16px;
+                font-weight: bold;
+                color: $primary;
+                padding: 10px;
+                border-radius: 10px;
+                @include pad{
+                    color: #fff; 
+                }
+            }
+
+            a:hover{
+                background-color: $primary-light;
+            }
+        }
+    }
+
+    &-active{
+        z-index: 1;
+
+        @include pad(){
+            visibility: visible;
+            top: 50px;
+            transition: all 0.3s;
+            li{
+                a{
+                    color: $primary;
+                    transition: all 1.7s;
+                }
+            }
+            
+            :hover{
+                background: $primary-light;
+            }
+        }
+    }
+
+
+    &-cart{
+        margin-left: -20px;
+        a{
+            width: 24px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+       
+
+        a:hover{
+            background-color: $primary-light;
+        }
+    }
+};
+
+
+.banner{
+    img{
+        margin-bottom: 60px;
+        max-width: 100%;
+
+        @include pad(){
+            margin-bottom: 0;
+        }
+    }
+};
+
+
+/*下方區塊*/
+.container{
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include pad(){
+        width: 75%;
+    }
+}
+
+.subscribe{
+    background-color: $primary;
+
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 24px;
+        line-height: 33px;
+        color: $primary-light;
+
+        @include pad(){
+            justify-content: center;
+        }
+    }
+
+    &-title{
+        display: flex;
+        align-items: center;
+
+        @include pad(){
+            margin-bottom: 30px;
+        }
+
+        img{
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+        }
+    }
+}
+
+
+
+.form-mail{
+    background-color: $primary-light;
+    width: 380px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    label{
+        padding: 16px 0px 16px 20px;
+        display: flex;
+    
+        img{
+            padding-right: 20px;
+        }
+    }
+
+    input[type="submit"]{
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/arrow_forward-24px.png);
+        width: 64px;
+        background-color: $accent;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+}
+
+
+#mail{
+    background-color: $primary-light;
+    cursor:pointer;
+    border: none;
+    outline: none;
+}
+
+
+
+.footer{
+    background-color:$primary-light;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &-inner{
+        justify-content: space-between;
+        align-items: stretch;
+
+        @include pad(){
+            flex-direction: column;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 16px;
+            color: $primary;
+            padding-top: 16px;
+            font-family: Times;
+        }
+    }
+}
+
+
+.information{
+    width: 50%;
+    padding-top: 8.9pt;
+}
+
+.logo{
+    width: 171px;
+    margin-bottom: 115.5px;
+
+    @include pad(){
+        margin-bottom: 39.5px;
+    }
+}
+
+.contact{
+    font-size: 16px;
+    line-height: 24px;
+    color: $primary;
+    font-weight: regular;
+    margin-bottom: 30px;
+
+    @include pad(){
+        margin-bottom: 37px;
+    }
+}
+
+.slogan{
+    width: 50%;
+    writing-mode: vertical-rl;
+    font-size: 23px;
+    line-height: 29pt;   
+    color: $primary;
+    font-family: Noto Serif TC Black;
+    letter-spacing: 6px;
+
+    @include pad(){
+        display: none;
+    }
+}
+
+.link{
+    display: flex;
+    width: 50%;
+
+    @include pad(){
+        margin-bottom: 23px;
+    }
+
+    li{
+        a{
+            img{
+                width: 30px;
+                height: 30px;
+                margin-right: 8px;
+            }
+        }
+    }
+}

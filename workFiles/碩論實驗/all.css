@@ -1,0 +1,546 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang TC", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 95%;
+  max-height: 95%;
+  box-shadow: 3px 3px 5px #434343;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #8a6bbe;
+  border-style: none;
+  padding: 30px;
+  color: #fcfaf2;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 28px;
+  margin: 0 auto;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn_s {
+  padding: 20px;
+  font-size: 24px;
+}
+
+.btn:hover {
+  background-color: #b28fce;
+  transition: all 0.5s;
+}
+
+.btn:active {
+  background-color: #ffb11b;
+  transition: all 0.5s;
+}
+
+.scrollbar {
+  background: #fcfaf2;
+  overflow-y: scroll;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(138, 107, 190, 0.3);
+  border-radius: 10px;
+  background-color: #fcfaf2;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 12px;
+  background-color: #fcfaf2;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(138, 107, 190, 0.3);
+  background-color: #b28fce;
+}
+
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .wrap {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 768px) {
+  .wrap {
+    max-width: 768px;
+  }
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: auto;
+  }
+}
+
+.banner,
+.bannerFooter {
+  background-color: #fcfaf2;
+  background-position: center;
+  color: #8a6bbe;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bannerInfo,
+.bannerFooterInfo {
+  width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.banner p,
+.bannerFooter p {
+  font-size: 24px;
+  line-height: 28px;
+  font-style: italic;
+  padding: 20px;
+}
+.banner h1, .banner .h1,
+.bannerFooter h1,
+.bannerFooter .h1 {
+  font-size: 60px;
+  line-height: 94px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.banner h2, .banner .h2,
+.bannerFooter h2,
+.bannerFooter .h2 {
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.banner ul,
+.bannerFooter ul {
+  display: flex;
+  justify-content: space-between;
+}
+.banner ul.explainList,
+.bannerFooter ul.explainList {
+  list-style: decimal;
+  font-size: 28px;
+  display: block;
+  text-align: left;
+  margin-bottom: 36px;
+}
+.banner ul.explainList li,
+.bannerFooter ul.explainList li {
+  margin-bottom: 36px;
+}
+.banner ul.explainList li span,
+.bannerFooter ul.explainList li span {
+  color: #fcfaf2;
+  background-color: #434343;
+}
+
+.bannerFooter {
+  height: 130px;
+}
+
+.topper {
+  color: #8a6bbe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 15vh;
+}
+.topper h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.process {
+  text-align: center;
+  padding: 30px 10px;
+  counter-reset: step;
+  color: #b28fce;
+}
+.process li {
+  list-style: none;
+  display: inline-block;
+  width: 13%;
+  position: relative;
+  text-align: center;
+}
+.process li a {
+  color: #b28fce;
+}
+.process li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #b28fce;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: #fcfaf2;
+}
+.process li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  background-color: #8a6bbe;
+  opacity: 0.5;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.process li:first-child:after {
+  content: none;
+}
+.process li.active {
+  color: #ffb11b;
+}
+.process li.active a {
+  color: #ffb11b;
+}
+.process li.active:before {
+  border-color: #ffb11b;
+}
+.process li.active:after, .process li.done::after {
+  background-color: #8a6bbe;
+  opacity: 1;
+}
+.process li.done {
+  color: #8a6bbe;
+}
+.process li.done a {
+  color: #8a6bbe;
+}
+.process li.done::before {
+  background-color: #8a6bbe;
+  border: 1px solid #8a6bbe;
+  color: #fcfaf2;
+}
+
+.footer {
+  background-color: #8a6bbe;
+  color: #fcfaf2;
+  padding-top: 64px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.footer .title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.footer li {
+  font-size: 22px;
+  line-height: 33px;
+}
+.footer li a {
+  color: #fcfaf2;
+  transition: all 0.5s;
+}
+.footer li a:hover {
+  color: #434343;
+  transition: all 0.5s;
+}
+.footer li:nth-child(1) {
+  margin-bottom: 16px;
+}
+
+.bgDark {
+  background-color: #434343;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(90vh - 130px);
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  margin: auto;
+}
+
+.cardFront,
+.cardBack {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: all 0.2s linear;
+}
+
+.cardBack {
+  opacity: 0;
+}
+
+.active {
+  opacity: 1;
+}
+
+.close {
+  display: none;
+}
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #434343;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  top: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fed;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+.qrIMG {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 150px;
+  background-color: #8a6bbe;
+  padding: 20px;
+  padding-bottom: 0;
+  border-radius: 0 0 5px 5px;
+  background: #fcfaf2;
+  box-shadow: 7px 7px 5px rgba(67, 67, 67, 0.3);
+  color: #434343;
+  transition: 0.5s;
+}
+.qrIMG p {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.25em;
+}
+.qrIMG:hover {
+  background-color: #434343;
+  transition: 0.5s;
+  color: #fcfaf2;
+}
+.qrIMG img {
+  transition: 0.5s;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}

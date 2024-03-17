@@ -1,0 +1,62 @@
+@import "_mixin.scss";
+
+h1 {
+    a{
+        background-image: url(../img/首頁/d’Perfume.png);
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.menu{
+    @include largescreen{
+        width: 100%;
+    }
+}
+
+.shopCart{
+
+    .amount{
+        font-size: 8px;
+        line-height: 14px;
+        top: 2px;
+        right: 1px;
+    }
+
+}
+
+.menuList{
+    .navbar-nav{
+        a:hover{
+            background-color: rgba(0,0,0,0.1) !important;
+        }
+        @include largescreen{
+            li{
+                @include largescreen{
+                    background: #707070;
+                }
+            }
+            a{
+                color: white !important;
+                border-bottom:1px solid white !important;
+            }
+        }
+    }
+}
+
+.footer{
+    p{
+        font-size: 14px;
+    }
+
+    &Menu{
+        a:hover{
+            background-color: rgba(0,0,0,0.1);
+        }
+    }
+}
+
