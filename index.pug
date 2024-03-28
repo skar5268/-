@@ -5,92 +5,113 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>王暄雯</title>
  link(rel="stylesheet", href="all.css")
+ link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0")
 </head>
 <body>
 .wrap
  .card
   .resume
-    .photo
-    .profile
-      h1 王暄雯
-      h2 學歷
-        span Education
-      h4 國立嘉義大學數位學習與管理學系 碩士學位 | 2019～2024
-      h4 國立嘉義大學數位學習與管理學系 學士學位 | 2015～2019
+    .left 
+      .profile
+        h1 王暄雯
+        h2 
+          span.material-symbols-outlined school
+          |學歷
+          span Education
+        h4 2019～2024
+          br 
+          |嘉義大學數位學習設計與管理學系 碩士學位
+        h4 2015～2019
+          br 
+          |嘉義大學數位學習設計與管理學系 學士學位
 
-    .programmingSkills    
-      h2 程式技能
-        span Programming Skill
-      ul
-        li HTML
-          .bar
-            .value.p80
-        li CSS
-          .bar
-            .value.p80
-        li JS
-          .bar
-            .value.p60
-        li Vue
-          .bar
-            .value.p40
+      .skills    
+        h2 
+          span.material-symbols-outlined computer
+          |專業技能
+          span Skills
+        ul
+          li HTML
+            .bar
+              .value.w80
+          li CSS
+            .bar
+              .value.w80
+          li JS
+            .bar
+              .value.w60
+          li Vue
+            .bar
+              .value.w40
+          li AndroidStudio 
+            .bar
+              .value.w10
+          li Adobe Illustrator
+            .bar
+              .value.w80
+          li Adobe Photoshop
+            .bar
+              .value.w60
+          li Adobe Indesign
+            .bar
+              .value.w60
+          li Adobe Premire
+            .bar
+              .value.w40  
 
-    .experience
-      h2 經歷與作品
-        span Experience & Works
+    .right
+      .experience
+      h2 
+        span.material-symbols-outlined work
+        |經歷
+        span Experience
 
       ul.experienceList
         li 
           h3 嘉義大學數位學習系研究所 | 2019～2023
-          ul
-            li 碩論實驗網站
+          p 以情感設計與擴增實境設計教材，探討其對學習之影響。並設計實驗網站，蒐集學習者之學習成效與學習內在動機數據。
 
         li 
-          h3 捷克中文系實習老師 | 2022
+          h3 捷克馬薩里克大學中文系實習老師 | 2022
           ul
-            li 中文學習教材
+            p 教導國際學生中文課程一學期，指導口說對話外，也使用程式設計教材幫助學生學習。
 
         li 
           h3 六角學院線上課程助教實習生 | 2020～2021
-          ul
-            li 使用 HTML、CSS 開發一個網站
-            li 使用 jQuery 打造互動性網頁動畫效果
-            li 網頁切版直播班 2020 秋季班
-            li JavaScript 工程師養成直播班 - 2021 春季班
-            li Vue 作品實戰 2021 夏季班
-
+          p 以助教身分解決學員遇到之問題，並與教師討論課程之難易度，所參與的課程包含網頁切版（HTML、CSS、JS）與 Vue 框架實戰。
+          
         li 
           h3 嘉義大學數位學習系畢業專題 | 2018～2019
-          ul
-            li 空拍機教學網站
-      
+          p 與組員共同拍攝 15 部短片，以劇情式教學呈現，風格鮮明活潑，由淺入深介紹空拍技巧。並架設網站，提供空拍新手快速入門。也以空拍作品為主題設計雜誌。
             
-    ul.links
-      li 
-        a(href="workFiles/平面設計作品/index.html") 平面設計作品
-      li 
-        a(href="workFiles/蔗香甜/index.html") 蔗香甜
-      li 
-        a(href="workFiles/d'Perfume/index.html") d'Perfume
-      li 
-        a(href="workFiles/BMI Calculator/index.html") BMI Calculator
-      li 
-        a(href="workFiles/高雄旅遊網/index.html") 高雄旅遊網
-      li 
-        a(href="workFiles/旅遊套票/index.html") 旅遊套票
-      li 
-        a(href="workFiles/碩論實驗/index.html") 碩論實驗網站
+  //- ul.links
+  //-   li 
+  //-     a(href="") 空拍機教學網站
+  //-   li 
+  //-     a(href="") 蔗香甜
+  //-   li 
+  //-     a(href="") d'Perfume
+  //-   li 
+  //-     a(href="") BMI Calculator
+  //-   li 
+  //-     a(href="") 高雄旅遊網
+  //-   li 
+  //-     a(href="") 旅遊套票
+  //-   li 
+  //-     a(href="") 碩論實驗網站
 
-    .contact
-      h2 聯絡方式
-        span Contact Method
-      ul
-        li Mail：
-          a(href="mailto:skar5268@gmail.com") skar5268@gmail.com
-        li 電話：
-          a(href="tel:+0903181398") 0903181398
-        li 
-          p 地址：雲林縣虎尾鎮中山路10號
+  .contact
+    h2 
+      span.material-symbols-outlined contacts
+      |聯絡方式
+      span Contact Method
+    ul
+      li Mail：
+        a(href="mailto:skar5268@gmail.com") skar5268@gmail.com
+      li 電話：
+        a(href="tel:+0903181398") 0903181398
+      li 
+        p 地址：雲林縣虎尾鎮中山路10號
 
   
 </body>

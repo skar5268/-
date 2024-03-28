@@ -1,0 +1,227 @@
+@import "reset.css";
+@import "mixin";
+
+$primary: #F5AC26;
+$white: #FCFAF2;
+$black: #434243;
+
+body{
+  background-color: $primary;
+}
+
+.wrap{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+ 
+.card{
+  background: repeating-linear-gradient(45deg, $primary, $primary 1px, $white 0, $white 7px);
+  box-shadow: 6px 6px 10px 0px rgba($color: $primary, $alpha: .1);
+  margin: 50px;
+  padding: 30px;
+  border-radius: 10px;
+
+  @include pad{
+    margin: 0;
+    padding: 0;
+    background: $white;
+    border-radius: 0;
+  }
+}
+
+  
+.resume{
+  background-color: $white;
+  color: $black;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  .left{
+    width: 35%;
+  }
+  .right{
+    width: 55%;
+  }
+
+  @include largescreen(){
+    flex-direction: column;
+    .left{
+      width: 100%;
+    }
+    .right{
+      width: 100%;
+    }
+  };
+}
+
+.profile{
+  padding: 20px;
+  
+  p{
+    margin-bottom: 10px;
+  }
+}
+
+    
+h1{
+  font-size: 36px;
+}
+  
+h2{
+  font-size: 24px;
+  line-height: 1; 
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-end;
+  
+  span{
+    font-size: 16px;
+    margin-left: 10px;
+    color: $primary;
+    @include pad{
+      display: none;
+    }
+    
+    &.material-symbols-outlined{
+      color: $black;
+      margin-left: 0px;margin-right: 10px;
+      @include pad{
+        display: none;
+      }
+    }
+  }
+}
+
+h4{
+  margin-bottom: 30px;
+}
+
+
+.links{
+  padding: 30px;
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  li{
+    margin-bottom: 40px;
+    text-align: center;
+    flex: 0 0 30%;
+
+    @include largescreen{
+      flex: 0 0 100%;
+    }
+  }
+  
+  a{
+    color: $black;
+    padding: 20px;
+    border-radius: 3px;
+    border: 3px solid $primary;
+    background-color: $primary;
+    transition: .5s;
+    font-weight: bold;
+            
+    &:hover{
+      background-color: $black;
+      color: $primary;  
+    }
+  }
+}
+
+.experience{
+  padding: 20px;
+}
+  
+.experienceList{
+  h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  &>li{
+    margin-bottom: 35px;    
+
+    p{
+      line-height: 2;
+      font-weight: normal;
+      padding-bottom: 20px;
+    }
+    
+     &:last-child{
+      padding-bottom: 0;
+     }
+    }
+}
+
+  
+
+.bar{
+  width: 150px;
+  height: 10px;
+  border: 2px solid $primary;
+  border-radius: 5px; 
+}
+
+.skills{
+  border-top: 2px solid $primary;
+  border-bottom: 2px solid $primary;
+  padding: 20px;
+
+  li{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    @include pad{
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+.value{
+  height: 100%;
+  background-color: $primary;
+}
+
+.w80{
+  width: 80%;
+}
+.w60{
+  width: 60%;
+}
+.w40{
+  width: 40px;
+}
+.w10 {
+  width: 10px;
+}
+
+.contact{
+  padding: 20px;
+  background-color: $white;
+  text-align: center;
+
+  h2{
+    display: block;
+  }
+
+  li{
+    margin-bottom: 20px;
+  }
+  
+  a{
+    color: $black;
+    display: inline-block;
+    
+    &:hover{
+      color: $primary;
+    }
+  }
+}

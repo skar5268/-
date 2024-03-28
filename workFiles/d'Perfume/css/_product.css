@@ -1,8 +1,0 @@
-.page-link:hover {
-  text-decoration: line-through;
-}
-
-.pagination li:nth-child(1) .currentPage {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
